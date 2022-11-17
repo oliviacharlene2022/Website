@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Datenanalyse</title>
+    </head>
+    <body onload="showDate();">
+        <header>
+                <a href="index.html"><nav class="navbar"><img 
+                  class="logo"          
+                    src="InnkaufhausLogo.jpg" 
+                    alt="Home">
+                </a>
+                <div class="navLogo"></div>
+                <a href="#" class="toggleButton">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <div class="navLinks">
+                    <ul>
+                        <li><a href="datenanalyse.html" id="boldDatenanalyse">Datenanalyse</a></li>
+                        <li><a href="einstellungen.html">Einstellungen</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="choose">
+            <form>
+              <span class="dropdownSpanDatum">
+                <label for="day">Datum:</label>
+                <select name="day" id="day"></select>
+                <label for="month"></label>
+                <select name="month" id="month"></select>
+                <label for="year"></label>
+                <select name="year" id="year">Year:</select>
+              </span>
+            </form>
+            <form>
+              <span class="dropdownSpanZeitraum">
+                <label for="Zeitraum">Zeitraum: </label>
+                <select name="zeitraum" id="zeitraum">
+                  <option value="mday">Tag</option>
+                  <option value="month">Monat</option>
+                  <option value="year">Jahr</option>
+                </select>
+              </span>
+            </form>
+        </div>
+        <div class="diagramm">
+            <div id="diagramm1"></div>
+            <div id="diagramm2"></div>
+        </div>
+    <script src="script.js" defer></script>
+    </body>
+</html>
